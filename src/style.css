@@ -1,1 +1,11 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: green;
+}
+
+.card {
+  background-color: rgb(255, 255, 255) ff;
+  width: 575px;
+  height: 1300px;
+}
