@@ -1,11 +1,29 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
 body {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
   background-color: green;
 }
 
 .card {
   background-color: rgb(255, 255, 255) ff;
   width: 575px;
-  height: 1300px;
+  height: 800px;
+}
+
+.center {
+  margin: auto;
+}
+
+.numbertop {
+}
+
+.suit {
+}
+
+.numberbottom {
+  position: absolute;
+  margin-bottom: 0px;
 }
