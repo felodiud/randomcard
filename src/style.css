@@ -12,6 +12,7 @@ body {
   width: 250px;
   height: 400px;
   display: flex;
+  border-radius: 10px;
 }
 
 .center {
@@ -24,6 +25,8 @@ body {
 }
 
 .numbertop {
+  margin-left: 15px;
+  margin-top: 5px;
 }
 
 .imgcontainer {
@@ -34,10 +37,12 @@ body {
 .suit {
   position: absolute;
   top: 50%;
+  left: 35%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
 .numberbottom {
-  margin-right: 2px;
+  text-align: end !important;
+  margin-right: 20px;
 }

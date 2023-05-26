@@ -28,6 +28,9 @@ if (numero == 13) {
     }
   }
 }
+
+let pinta = Math.floor(Math.random() * 4);
+
 const h1 = document.createElement("H1");
 pcard.append(h1);
 h1.innerHTML = numero;
@@ -38,14 +41,30 @@ imgcontainer.classList.add("imgcontainer");
 pcard.append(imgcontainer);
 
 const suit = document.createElement("I");
-suit.classList.add("fa-heart");
-suit.classList.add("fa-solid");
 suit.classList.add("suit");
 suit.classList.add("fa-5x");
-suit.style.color = "red";
+suit.classList.add("fa-solid");
 imgcontainer.append(suit);
+
+if (pinta == 0) {
+  suit.classList.add("fa-diamond");
+  suit.style.color = "red";
+} else {
+  if (pinta == 1) {
+    suit.classList.add("fa-heart");
+    suit.style.color = "red";
+  } else {
+    if (pinta == 2) {
+      suit.classList.add("fa-heart-crack");
+      suit.style.color = "black";
+    } else {
+      suit.classList.add("fa-heart-pulse");
+      suit.style.color = "black";
+    }
+  }
+}
 
 const h2 = document.createElement("H1");
 pcard.append(h2);
 h2.innerHTML = numero;
-h1.classList.add("numberbotom");
+h2.classList.add("numberbottom");
