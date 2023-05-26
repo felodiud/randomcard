@@ -33,10 +33,16 @@ pcard.append(h1);
 h1.innerHTML = numero;
 h1.classList.add("numbertop");
 
+const imgcontainer = document.createElement("DIV");
+imgcontainer.classList.add("imgcontainer");
+pcard.append(imgcontainer);
+
 const suit = document.createElement("I");
 suit.classList.add("fa-heart");
 suit.classList.add("fa-solid");
-pcard.append(suit);
+suit.classList.add("suit");
+suit.classList.add("fa-5x");
+imgcontainer.append(suit);
 
 const h2 = document.createElement("H1");
 pcard.append(h2);
