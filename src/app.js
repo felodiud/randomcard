@@ -42,6 +42,7 @@ suit.classList.add("fa-heart");
 suit.classList.add("fa-solid");
 suit.classList.add("suit");
 suit.classList.add("fa-5x");
+suit.style.color = "red";
 imgcontainer.append(suit);
 
 const h2 = document.createElement("H1");
